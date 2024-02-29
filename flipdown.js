@@ -91,7 +91,7 @@ var FlipDown = function () {
   }, {
     key: "_parseOptions",
     value: function _parseOptions(opt) {
-      var headings = ["Days", "Hours", "Minutes", "Seconds"];
+      var headings = ["Días", "Horas", "Minutos", "Segundos"];
 
       if (opt.headings && opt.headings.length === 4) {
         headings = opt.headings;

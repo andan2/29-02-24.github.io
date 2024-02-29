@@ -2,11 +2,11 @@ document.addEventListener('DOMContentLoaded', () => {
   // Asegúrate de tener en cuenta la zona horaria de España (CET/CEST) para las fechas
   // España está en UTC+1 en fechas sin horario de verano (CET) y UTC+2 con horario de verano (CEST)
 
-  // Fecha de inicio: 29 de febrero de 2024 a las 2:50 AM, hora española
-  const startDate = new Date(Date.UTC(2024, 1, 29, 1, 45, 0)); // Meses son 0-indexados; 1 = Febrero
+  // Fecha de inicio: 29 de febrero de 2024 a las 11:00 AM, hora española
+  const startDate = new Date(Date.UTC(2024, 1, 29, 10, 0, 0)); // Meses son 0-indexados; 1 = Febrero
 
-  // Fecha de fin: 1 de marzo de 2024 a las 2:50 AM, hora española
-  const endDate = new Date(Date.UTC(2024, 2, 1, 1, 45, 0)); // Meses son 0-indexados; 2 = Marzo
+  // Fecha de fin: 3 de marzo de 2024 a las 11:00 AM, hora española
+  const endDate = new Date(Date.UTC(2024, 2, 3, 10, 0, 0)); // Meses son 0-indexados; 2 = Marzo
 
   // Convierte las fechas a Unix timestamp en segundos
   const startTimestamp = startDate.getTime() / 1000;

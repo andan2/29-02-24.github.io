@@ -15,7 +15,7 @@
   <h1>Vuelve en:</h1>
   <div id="flipdown" class="flipdown"></div>
   <div class="buttons">
-    <a href="https://github.com/PButcher/flipdown#flipdown" target="_blank" class="button"> <span>Aquí tienes la foto con los dos ramos 😊​</span></a>
+    <a href="https://github.com/PButcher/flipdown#flipdown" target="_blank" class="button"> <span>Aquí tienes los dos ramos 😊​</span></a>
   </div>
 </div>
 <!-- Lightbox container -->
@@ -23,7 +23,21 @@
   <div class="lightbox-content">
     <span class="close" id="close-lightbox">&times;</span>
     <!-- Contenido que quieres mostrar en la caja de luz -->
-    <img class="mi-clase-imagen" src="./Imagenes/floressanvalentinmaria.jpg" alt="Flores San Valentin para Maria">
+    <div class="slider-wrapper">
+      <div class="slider">
+        <!-- Agregar imágenes aquí -->
+        <img src="./Imagenes/floressanvalentinmaria.jpg" id="slide1" alt="flores san valentin">
+        <img src="./Imagenes/flores_rosas_foto.jpg" id="slide2" alt="otra vista del ramo de flores">
+        <img src="./Imagenes/primer_ramo.jpeg" id="slide3" alt="flores para la chica más guapa del mundo">
+        <img src="./Imagenes/segundo_ramo.jpeg" id="slide4" alt="bueno, flores para la chica más guapa del universo">
+      </div>
+      <div class="slider-nav">
+        <a href="#slide1"></a>
+        <a href="#slide2"></a>
+        <a href="#slide3"></a>
+        <a href="#slide4"></a>
+      </div>
+    </div> 
   </div>
 </div>
 <!-- partial -->

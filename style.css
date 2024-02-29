@@ -186,3 +186,84 @@ body.light-theme .buttons .button:hover {
     height: auto;
   }
 }
+
+/* slider */
+
+/* Estilos para el wrapper del slider */
+.slider-wrapper {
+  position: relative;
+  max-width: 48rem;
+  margin: 0 auto;
+  overflow: hidden; /* Asegura que no se muestre una barra de desplazamiento por defecto */
+  background-color: transparent; /* Ajusta a tu color de fondo deseado o hazlo transparente */
+}
+
+/* Estilos para el slider */
+.slider {
+  display: flex;
+  aspect-ratio: 4 / 3;
+  overflow-x: scroll; /* Habilita desplazamiento */
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra más suave */
+  border-radius: 0.5rem; /* Esquinas redondeadas */
+}
+
+
+/* Estilos personalizados para la barra de desplazamiento */
+.slider::-webkit-scrollbar {
+  height: 10px;
+}
+
+.slider::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.slider::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px; /* Bordes redondeados para el thumb */
+}
+
+.slider::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Para Firefox */
+.slider {
+  scrollbar-width: thin;
+  scrollbar-color: #888 #f1f1f1;
+}
+
+/* Estilos para las imágenes dentro del slider */
+.slider img {
+  flex: 0 0 auto; /* Previene el estiramiento de las imágenes */
+  width: 100%;
+  scroll-snap-align: start;
+  object-fit: cover; /* Asegura que las imágenes cubran el espacio asignado */
+}
+
+/* Estilos para la navegación del slider */
+.slider-nav {
+  display: flex;
+  column-gap: 1rem;
+  position: absolute;
+  bottom: 1.25rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+/* Estilos para los botones de navegación */
+.slider-nav a {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background-color: #ffffff;
+  opacity: 0.75;
+  transition: opacity 250ms ease;
+}
+
+/* Efecto de hover para los botones de navegación */
+.slider-nav a:hover {
+  opacity: 1;
+}
