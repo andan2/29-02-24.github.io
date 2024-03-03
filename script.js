@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const startDate = new Date(Date.UTC(2024, 1, 29, 10, 0, 0)); // Meses son 0-indexados; 1 = Febrero
 
   // Fecha de fin: 3 de marzo de 2024 a las 11:00 AM, hora española
-  const endDate = new Date(Date.UTC(2024, 2, 3, 13, 10, 0)); // Meses son 0-indexados; 2 = Marzo
+  const endDate = new Date(Date.UTC(2024, 2, 3, 13, 20, 0)); // Meses son 0-indexados; 2 = Marzo
 
   // Convierte las fechas a Unix timestamp en segundos
   const startTimestamp = startDate.getTime() / 1000;
